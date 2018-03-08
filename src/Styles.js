@@ -11,4 +11,5 @@ export const styles = {
   padding:    padding,
   color:      color
 };
+
 export default style;

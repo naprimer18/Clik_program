@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 var summa=0;
 
- class New_component1 extends React.Component {
+export default class New_component1 extends React.Component
+ {
 
    constructor(props) {
      super(props);
+     this.add_one = this.add_one.bind(this);
    }
 
 	random(min, max) {
-	   let r = Math.random();
-	   return Math.floor(r * (max - min) + min);
+	   return Math.floor(Math.random()* (max - min) + min);
 	}
 
 	add_one() {
@@ -32,11 +33,10 @@ var summa=0;
 
     return (
       <div>
-        <button style={style} onClick={this.add_one.bind(this)}>
+        <button style={style} onClick={this.add_one}>
       ◄►
         </button>
       </div>
     );
   }
 }
-export default New_component1;
