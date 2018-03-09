@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import './App.css'
-import New_component1 from '/component/New_component1.js'
+import New_component1 from './New_component1.js'
 export default class CreateGame extends Component {
 
   constructor (props) {
