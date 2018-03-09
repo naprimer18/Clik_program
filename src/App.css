@@ -1,9 +1,8 @@
 * {
 background-image:url(http://widefon.com/_ld/90/03824646.jpg);
-
 background-attachment:fixed;
 background-position:center;
-background-size: 100%;
+
 color :maroon;
 
   font-family : 'Comic Sans MS, Lucida Handwriting, cursive';
@@ -11,6 +10,8 @@ color :maroon;
   padding :0px 0;
 }
 
+@media screen and (max-width: 640px) { *{ font-size: 40%; } }
+@media screen and (max-width: 1024px) { *{font-size: 80%;} }
 .name1 {
   font-size : 2em;
   font-family : Snell Roundhand, cursive;
@@ -18,8 +19,8 @@ color :maroon;
 }
 
 .name2 {
-   font-size :8em;
-   position:center;
+   font-size :5em;
+
    color :red;
    padding-left:200px;
 }
@@ -33,7 +34,7 @@ color :maroon;
 button {
   position: relative;
   display: inline-block;
-  font-size: 100%;
+
   font-weight: 700;
   color: rgb(209,209,217);
   text-decoration: none;

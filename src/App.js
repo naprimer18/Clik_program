@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import './App.css'
-import CreateGame from './CreateGame.js'
+import CreateGame from '/component/CreateGame.js'
 
 export default class App extends React.Component {
   render () {

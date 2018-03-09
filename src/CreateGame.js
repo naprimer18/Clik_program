@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import './App.css';
-import New_component1 from './New_component1.js'
+import React, { Component } from 'react'
 
+import './App.css'
+import New_component1 from '/component/New_component1.js'
 export default class CreateGame extends Component {
 
-  constructor(props) {
+  constructor (props) {
   		super(props);
       this.state={ball:0};
       this.state = {value:10};
@@ -19,7 +18,7 @@ export default class CreateGame extends Component {
 
      decrement() {
        this.setState({value: this.state.value - 1});
-       if(this.state.value<=0) {
+       if(this.state.value <= 0) {
          alert("start again !!! ");
     	   window.location.reload();
        }
